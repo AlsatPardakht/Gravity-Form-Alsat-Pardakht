@@ -2250,7 +2250,7 @@ class GFPersian_Gateway_Alsat
 					$Message = '';
 					$Status  = 'cancelled';
 				}
-				$Transaction_ID = !empty($Result['refNumber']) ? $Result['refNumber'] : '-';
+				$Transaction_ID = !empty($Result['iN']) ? $Result['iN'] : '-';
 				//End of Alsat
 			} else {
 				$Status         = 'completed';
