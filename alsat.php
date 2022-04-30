@@ -2250,7 +2250,7 @@ class GFPersian_Gateway_Alsat
 					$Message = '';
 					$Status  = 'cancelled';
 				}
-				$Transaction_ID = !empty($Result['iN']) ? $Result['iN'] : '-';
+				$Transaction_ID = !empty($Result['PSP']['InvoiceNumber']) ? $Result['PSP']['InvoiceNumber'] : '-';
 				//End of Alsat
 			} else {
 				$Status         = 'completed';
