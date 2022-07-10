@@ -2253,8 +2253,8 @@ class GFPersian_Gateway_Alsat
 				$Transaction_ID = !empty($Result['PSP']['InvoiceNumber']) ? $Result['PSP']['InvoiceNumber'] : '-';
 				//End of Alsat
 			} else {
-				$Status         = 'completed';
-				$Message        = '';
+				$Status         = 'no entry';
+				$Message        = 'بدون ورودی';
 				$Transaction_ID = apply_filters(self::$author . '_gf_rand_transaction_id', GFPersian_Payments::transaction_id($entry), $form, $entry);
 				$free           = true;
 			}
